@@ -12,6 +12,7 @@ export const fetchUser = id => {
     _fetchUser(id, dispatch);
   };
 };
+``;
 
 const _fetchUser = _.memoize(async (id, dispatch) => {
   const response = await jsonPlaceholder.get(`/users/${id}`);
